@@ -13,6 +13,21 @@ build-type:          Simple
 cabal-version:       >=1.8
 
 executable degu
-  -- main-is:             
-  -- other-modules:       
-  build-depends:       base ==4.5.*
+  main-is:             Main.hs
+  other-modules:       Degu.Font
+  build-depends:       base,
+                       array,
+                       OpenGL,
+                       GLUT,
+                       freetype2,
+                       mtl
+  extensions:          RecordWildCards,
+                       NamedFieldPuns,
+                       RankNTypes,
+                       GADTs,
+                       DeriveDataTypeable,
+                       DataKinds,
+                       KindSignatures,
+                       TypeFamilies,
+                       GeneralizedNewtypeDeriving,
+                       EmptyDataDecls
